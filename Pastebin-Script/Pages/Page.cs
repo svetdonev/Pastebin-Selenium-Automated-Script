@@ -16,7 +16,7 @@ namespace Pastebin_Script.Pages
         }
 
         public static string PastebinUrl = "https://pastebin.com/";
-        public IWebElement CodeInput => driver.FindElement(By.Id("postform-text"));
+        public IWebElement TextInput => driver.FindElement(By.Id("postform-text"));
         public IWebElement ExpirationDropdown => driver.FindElement(By.Id("select2-postform-expiration-container"));
         public IWebElement PasteNameInput => driver.FindElement(By.Id("postform-name"));
         public IWebElement CreateNewPasteButton => driver.FindElement(By.XPath("//button[text()='Create New Paste']"));
@@ -25,9 +25,9 @@ namespace Pastebin_Script.Pages
             ExpirationDropdown.Click();
             driver.FindElement(By.XPath($"//li[text()='{expirationOption}']")).Click();
         }
-        public void CreateNewPaste(string code, string expirationOption, string name)
+        public void CreateNewPaste(string text, string expirationOption, string name)
         {
-            CodeInput.SendKeys(code);
+            TextInput.SendKeys(text);
             SelectPasteExpiration(expirationOption);
             PasteNameInput.SendKeys(name);
             CreateNewPasteButton.Click();

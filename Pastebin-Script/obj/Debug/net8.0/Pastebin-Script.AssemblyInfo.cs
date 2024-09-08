@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pastebin-Script")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a9573c517d5557f14bcdec1137899fe3bea41e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6396ec5c94dbdccc5b81e08cc52c0dc4ffad1354")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pastebin-Script")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pastebin-Script")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
